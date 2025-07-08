@@ -111,15 +111,6 @@ npm run dev
 
 ---
 
-## 🔄 Deployment
-
-### Option 1 – Deploy backend to [Render](https://render.com)
-### Option 2 – Deploy frontend to [Vercel](https://vercel.com)
-
-You can also deploy both using Docker or combine static files into a JAR if needed.
-
----
-
 ## 📄 License
 
 This project is open source and available under the MIT License.
