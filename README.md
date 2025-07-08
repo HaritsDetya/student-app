@@ -36,8 +36,8 @@ student-app/
 - Node.js (v18 or higher)
 - Java JDK 17+
 - Git
-- IntelliJ for backend (recommended)
-- VS Code for frontend (recommended)
+- IntelliJ for backend
+- VS Code for frontend
 
 ---
 
@@ -94,7 +94,7 @@ npm run dev
   "id": "22/504159/SV/21598",
   "namaDepan": "Muhammad",
   "namaBelakang": "Harits",
-  "tanggalLahir": "2002-07-15"
+  "tanggalLahir": "1945-07-15"
 }
 ```
 
