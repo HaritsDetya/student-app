@@ -94,8 +94,8 @@ npm run dev
 ```json
 {
   "id": "12345",
-  "namaDepan": "Muhammad",
-  "namaBelakang": "Harits",
+  "namaDepan": "Budi",
+  "namaBelakang": "Andi",
   "tanggalLahir": "1945-07-15"
 }
 ```
