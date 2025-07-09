@@ -21,9 +21,19 @@ export default function StudentForm({ onSave, editingStudent, cancelEdit }) {
 
   const handleSubmit = e => {
     e.preventDefault();
+
+    const today = new Date();
+    const birthDate = new Date(form.tanggalLahir);
+
+    if (birthDate > today) {
+      alert("Tanggal lahir tidak boleh di masa depan.");
+      return;
+    }
+
     onSave(form);
     setForm({ id: "", namaDepan: "", namaBelakang: "", tanggalLahir: "" });
   };
+
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 p-4 bg-white rounded shadow">

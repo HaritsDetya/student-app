@@ -1,10 +1,12 @@
 package com.example.demo.service;
 
-import com.example.demo.model.Student;
-import com.example.demo.repository.StudentRepository;
+import java.time.LocalDate;
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.example.demo.model.Student;
+import com.example.demo.repository.StudentRepository;
 
 @Service
 public class StudentService {
@@ -24,7 +26,10 @@ public class StudentService {
     }
 
     public Student save(Student student) {
-        return repository.save(student);
+        if (student.getTanggalLahir().isAfter(LocalDate.now())) {
+            throw new IllegalArgumentException("Tanggal lahir tidak boleh di masa depan.");
+        }
+            return repository.save(student);
     }
 
     public void delete(String id) {
