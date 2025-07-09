@@ -1,4 +1,3 @@
-
 # 🎓 Aplikasi Manajemen Mahasiswa
 
 Aplikasi fullstack untuk mengelola data mahasiswa perguruan tinggi, dibangun dengan:
@@ -14,6 +13,7 @@ Aplikasi fullstack untuk mengelola data mahasiswa perguruan tinggi, dibangun den
 - Tambah / Edit / Lihat / Hapus data mahasiswa
 - Nama lengkap dihitung dari nama depan + nama belakang
 - Usia dihitung otomatis dari tanggal lahir
+- Validasi usia tidak boleh negatif
 - Antarmuka sederhana dan bersih menggunakan Tailwind CSS
 
 ---
@@ -36,8 +36,8 @@ student-app/
 - Node.js (versi 18 ke atas)
 - Java JDK 17+
 - Git
-- IntelliJ untuk backend
-- VS Code untuk frontend
+- IntelliJ untuk backend (Rekomendasi)
+- VS Code untuk frontend (Rekomendasi)
 
 ---
 
@@ -79,15 +79,17 @@ npm run dev
 
 ## 🔁 API Endpoint
 
-| Method | Endpoint           | Deskripsi             |
-|--------|--------------------|------------------------|
-| GET    | `/students`        | Menampilkan daftar mahasiswa |
-| POST   | `/students`        | Menambahkan mahasiswa baru   |
-| DELETE | `/students/{id}`   | Menghapus mahasiswa berdasarkan ID |
+| Method | Endpoint           | Deskripsi                             |
+|--------|--------------------|----------------------------------------|
+| GET    | `/students`        | Menampilkan daftar mahasiswa           |
+| GET    | `/students/{id}`   | Mengambil data mahasiswa berdasarkan ID |
+| POST   | `/students`        | Menambahkan mahasiswa baru             |
+| PUT    | `/students/{id}`   | Memperbarui data mahasiswa berdasarkan ID |
+| DELETE | `/students/{id}`   | Menghapus mahasiswa berdasarkan ID     |
 
 ---
 
-## 🧪 Contoh Data (POST `/students`)
+## 🧪 Contoh Payload (POST / PUT `/students`)
 
 ```json
 {
@@ -102,8 +104,15 @@ npm run dev
 
 ## 🧩 Teknologi yang Digunakan
 
-- React + Vite (Frontend)
-- Tailwind CSS (Styling)
-- Spring Boot (REST API)
-- H2 Database (untuk pengembangan)
-- Git + GitHub (Kontrol versi)
+- **React + Vite** – Frontend cepat dan modern
+- **Tailwind CSS** – Utility-first styling
+- **Spring Boot** – Backend REST API
+- **H2 Database** – Database ringan untuk pengembangan
+- **Axios** – HTTP request library di frontend
+- **Git + GitHub** – Version control dan kolaborasi
+
+---
+
+## 📄 Lisensi
+
+Proyek ini bersifat open source dan tersedia di bawah lisensi MIT.
