@@ -1,49 +1,49 @@
 
-# 🎓 Student Management App
+# 🎓 Aplikasi Manajemen Mahasiswa
 
-A fullstack application for managing college student records, built with:
+Aplikasi fullstack untuk mengelola data mahasiswa perguruan tinggi, dibangun dengan:
 
 - 💻 **Frontend**: React + Vite + Tailwind CSS
 - ⚙️ **Backend**: Java Spring Boot (REST API)
-- 🧪 **Database**: H2 (in-memory, auto-reset on restart)
+- 📝 **Database**: H2 (in-memory, otomatis reset setiap restart)
 
 ---
 
-## ✨ Features
+## ✨ Fitur
 
-- Add / View / Delete student data
-- Student full name calculated from first + last name
-- Age auto-calculated from birth date
-- Simple and clean interface using Tailwind CSS
+- Tambah / Lihat / Hapus data mahasiswa
+- Nama lengkap dihitung dari nama depan + nama belakang
+- Usia dihitung otomatis dari tanggal lahir
+- Antarmuka sederhana dan bersih menggunakan Tailwind CSS
 
 ---
 
-## 📁 Project Structure
+## 📁 Struktur Proyek
 
 ```
 student-app/
-├── backend/        # Spring Boot REST API
-├── frontend/       # React + Vite + Tailwind frontend
+├── backend/        # REST API dengan Spring Boot
+├── frontend/       # Frontend React + Vite + Tailwind
 └── README.md
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Memulai Proyek
 
-### ✅ Prerequisites
+### ✅ Prasyarat
 
-- Node.js (v18 or higher)
+- Node.js (versi 18 ke atas)
 - Java JDK 17+
 - Git
-- IntelliJ for backend
-- VS Code for frontend
+- IntelliJ untuk backend
+- VS Code untuk frontend
 
 ---
 
-## 🧠 Run the Application Locally
+## 🧠 Menjalankan Aplikasi Secara Lokal
 
-### 🔧 1. Clone this Repository
+### 🔧 1. Clone Repository
 
 ```bash
 git clone https://github.com/HaritsDetya/student-app.git
@@ -52,20 +52,20 @@ cd student-app
 
 ---
 
-### ⚙️ 2. Run Backend (Spring Boot)
+### ⚙️ 2. Jalankan Backend (Spring Boot)
 
 ```bash
 cd backend
 ./gradlew bootRun
 ```
 
-> REST API available at: `http://localhost:8080/students`  
-> H2 Console (for debug): `http://localhost:8080/h2-console`  
-> Default DB: H2 (in-memory)
+> REST API tersedia di: `http://localhost:8080/students`  
+> H2 Console (untuk debugging): `http://localhost:8080/h2-console`  
+> Database default: H2 (in-memory)
 
 ---
 
-### 🎨 3. Run Frontend (React + Vite + Tailwind)
+### 🎨 3. Jalankan Frontend (React + Vite + Tailwind)
 
 ```bash
 cd ../frontend
@@ -73,21 +73,21 @@ npm install
 npm run dev
 ```
 
-> Web app available at: `http://localhost:5173`
+> Web app tersedia di: `http://localhost:5173`
 
 ---
 
-## 🔁 API Endpoints
+## 🔁 API Endpoint
 
-| Method | Endpoint           | Description         |
-|--------|--------------------|---------------------|
-| GET    | `/students`        | Get list of students |
-| POST   | `/students`        | Add a new student    |
-| DELETE | `/students/{id}`   | Delete student by ID |
+| Method | Endpoint           | Deskripsi             |
+|--------|--------------------|------------------------|
+| GET    | `/students`        | Menampilkan daftar mahasiswa |
+| POST   | `/students`        | Menambahkan mahasiswa baru   |
+| DELETE | `/students/{id}`   | Menghapus mahasiswa berdasarkan ID |
 
 ---
 
-## 🧪 Sample Payload (POST `/students`)
+## 🧪 Contoh Data (POST `/students`)
 
 ```json
 {
@@ -100,17 +100,11 @@ npm run dev
 
 ---
 
-## 🧩 Tech Stack
+## 🧩 Teknologi yang Digunakan
 
 - React + Vite (Frontend)
 - Tailwind CSS (Styling)
 - Spring Boot (REST API)
-- H2 Database (for development)
-- Axios (HTTP calls)
-- Git + GitHub (Version Control)
-
----
-
-## 📄 License
-
-This project is open source and available under the MIT License.
+- H2 Database (untuk pengembangan)
+- Axios (HTTP request)
+- Git + GitHub (Kontrol versi)
