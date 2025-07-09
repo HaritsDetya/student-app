@@ -1,4 +1,4 @@
-export default function StudentList({ students, onDelete }) {
+export default function StudentList({ students, onDelete, onEdit }) {
   return (
     <div className="bg-white p-4 shadow rounded mt-4">
       <table className="w-full border">
@@ -16,9 +16,19 @@ export default function StudentList({ students, onDelete }) {
               <td className="border px-2">{s.id}</td>
               <td className="border px-2">{s.namaLengkap}</td>
               <td className="border px-2">{s.usia}</td>
-              <td className="border px-2">
-                <button onClick={() => onDelete(s.id)}
-                  className="bg-red-500 text-white px-2 py-1 rounded">Hapus</button>
+              <td className="border px-2 space-x-2">
+                <button
+                  onClick={() => onEdit(s)}
+                  className="bg-yellow-500 text-white px-2 py-1 rounded"
+                >
+                  Edit
+                </button>
+                <button
+                  onClick={() => onDelete(s.id)}
+                  className="bg-red-500 text-white px-2 py-1 rounded"
+                >
+                  Hapus
+                </button>
               </td>
             </tr>
           ))}
