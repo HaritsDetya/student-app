@@ -11,7 +11,7 @@ Aplikasi fullstack untuk mengelola data mahasiswa perguruan tinggi, dibangun den
 
 ## ✨ Fitur
 
-- Tambah / Lihat / Hapus data mahasiswa
+- Tambah / Edit / Lihat / Hapus data mahasiswa
 - Nama lengkap dihitung dari nama depan + nama belakang
 - Usia dihitung otomatis dari tanggal lahir
 - Antarmuka sederhana dan bersih menggunakan Tailwind CSS
