@@ -106,5 +106,4 @@ npm run dev
 - Tailwind CSS (Styling)
 - Spring Boot (REST API)
 - H2 Database (untuk pengembangan)
-- Axios (HTTP request)
 - Git + GitHub (Kontrol versi)
