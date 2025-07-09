@@ -93,7 +93,7 @@ npm run dev
 
 ```json
 {
-  "id": "22/504159/SV/21598",
+  "id": "12345",
   "namaDepan": "Muhammad",
   "namaBelakang": "Harits",
   "tanggalLahir": "1945-07-15"
